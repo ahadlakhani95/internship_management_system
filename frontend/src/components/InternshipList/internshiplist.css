@@ -1,0 +1,99 @@
+.student-wrapper {
+    padding: 30px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+.student-wrapper h2 {
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+/* Grid */
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+
+.student-card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header */
+
+.student-header h3 {
+    margin: 0;
+    color: #1e293b;
+}
+
+.company {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Description */
+
+.desc {
+    margin: 10px 0;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* Details */
+
+.student-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Skills */
+
+.student-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.student-skills span {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* Apply */
+
+.apply-btn {
+    margin-top: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.apply-btn:hover {
+    box-shadow: 0 6px 18px rgba(37, 99, 235, .5);
+}

@@ -1,0 +1,101 @@
+/* Container */
+.add-internship-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px 35px;
+    background: linear-gradient(145deg, #fef9ff, #f0f4ff); /* light gradient background */
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-internship-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+}
+
+/* Heading */
+.add-internship-container h2 {
+    text-align: center;
+    color: #4f46e5; /* purple accent */
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Form */
+.internship-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Inputs & Textarea */
+.internship-form input,
+.internship-form textarea {
+    padding: 14px 15px;
+    border: 2px solid #e0e7ff; /* light purple border */
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    resize: none; /* for textarea */
+    background-color: #ffffff;
+}
+
+.internship-form input:focus,
+.internship-form textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 12px rgba(79,70,229,0.25);
+}
+
+/* Placeholder Colors */
+.internship-form input::placeholder,
+.internship-form textarea::placeholder {
+    color: #6b7280; /* gray placeholder */
+}
+
+/* Textarea */
+.internship-form textarea {
+    min-height: 100px;
+}
+
+/* Button */
+.internship-form button {
+    padding: 14px 15px;
+    background: linear-gradient(135deg, #4f46e5, #8b5cf6); /* purple gradient */
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.internship-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(79,70,229,0.4);
+}
+
+.internship-form button:disabled {
+    background: #a5b4fc;
+    cursor: not-allowed;
+}
+
+/* Error Message */
+.add-internship-container p {
+    color: #dc2626; /* red */
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .add-internship-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+}

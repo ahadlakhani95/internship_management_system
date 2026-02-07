@@ -1,0 +1,99 @@
+/* Container */
+.company-application-container {
+    padding: 30px;
+    background: #f1f5f9; /* light gray background */
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.company-application-container h2 {
+    font-size: 28px;
+    color: #4f46e5; /* purple accent */
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* No applications message */
+.company-application-container p {
+    font-size: 16px;
+    color: #6b7280; /* gray text */
+}
+
+/* Card */
+.application-card {
+    background: linear-gradient(135deg, #ffffff, #fefefe);
+    padding: 20px 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(79,70,229,0.2);
+}
+
+/* Applicant name */
+.application-card h4 {
+    font-size: 20px;
+    color: #1e293b; /* dark text */
+    margin-bottom: 10px;
+}
+
+/* Info paragraph */
+.application-card p {
+    font-size: 15px;
+    color: #334155; /* soft dark text */
+    margin-bottom: 8px;
+}
+
+/* Labels bold */
+.application-card p b {
+    color: #4f46e5; /* purple label */
+}
+
+/* Buttons */
+.application-card button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Accept button */
+.application-card button:first-of-type {
+    background: linear-gradient(135deg, #10b981, #34d399); /* green gradient */
+    color: white;
+    margin-right: 10px;
+}
+
+.application-card button:first-of-type:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16,185,129,0.5);
+}
+
+/* Reject button */
+.application-card button:last-of-type {
+    background: linear-gradient(135deg, #ef4444, #f87171); /* red gradient */
+    color: white;
+}
+
+.application-card button:last-of-type:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(239,68,68,0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .company-application-container {
+        padding: 20px;
+    }
+
+    .application-card {
+        padding: 15px 20px;
+    }
+}
