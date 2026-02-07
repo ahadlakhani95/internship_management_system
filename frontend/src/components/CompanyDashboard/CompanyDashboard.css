@@ -223,3 +223,6 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(220, 38, 38, 0.5);
 }
+.logo{
+    color: white;
+}

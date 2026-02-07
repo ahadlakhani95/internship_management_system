@@ -5,6 +5,7 @@ import { BsFillHouseFill } from "react-icons/bs";
 import { LuCircleFadingPlus } from "react-icons/lu";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { MdOutlineDownloading } from "react-icons/md";
+import Navbar from "../navbar/Navbar";
 const CompanyLayout = () => {
     const navigate = useNavigate();
 
@@ -14,34 +15,34 @@ const CompanyLayout = () => {
     };
 
     return (
-        <div className="dashboard-wrapper">
+        <>
+            <Navbar />
+            <div className="dashboard-wrapper">
 
-            {/* Sidebar */}
-            <div className="sidebar">
+                {/* Sidebar */}
+                <div className="sidebar">
 
-                <h2 className="logo">Company</h2>
+                    <ul>
+                        <li onClick={() => navigate("/company/dashboard")}><BsFillHouseFill /> Dashboard</li>
+                        <li onClick={() => navigate("/company/add-internship")}><LuCircleFadingPlus /> Add Internship</li>
+                        <li onClick={() => navigate("/company/internships")}><RiFilePaper2Fill /> Manage Internships</li>
+                        <li onClick={() => navigate("/company/applications")}><MdOutlineDownloading /> Applications</li>
 
-                <ul>
-                    <li onClick={() => navigate("/company/dashboard")}><BsFillHouseFill /> Dashboard</li>
-                    <li onClick={() => navigate("/company/add-internship")}><LuCircleFadingPlus /> Add Internship</li>
-                    <li onClick={() => navigate("/company/internships")}><RiFilePaper2Fill /> Manage Internships</li>
-                    <li onClick={() => navigate("/company/applications")}><MdOutlineDownloading /> Applications</li>
-
-                    {/* Logout button */}
-                    <button className="logout-btn" onClick={handleLogout}>
-                        Logout
-                    </button>
-                </ul>
+                        {/* Logout button */}
+                        <button className="logout-btn" onClick={handleLogout}>
+                            Logout
+                        </button>
+                    </ul>
 
 
-            </div>
+                </div>
 
-            {/* Right Side Dynamic Content */}
-            <div className="dashboard-content">
-                <Outlet />
-            </div>
+                {/* Right Side Dynamic Content */}
+                <div className="dashboard-content">
+                    <Outlet />
+                </div>
 
-        </div>
+            </div></>
     );
 };
 

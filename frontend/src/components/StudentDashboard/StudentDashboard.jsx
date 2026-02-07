@@ -145,7 +145,7 @@ const StudentDashboard = () => {
                         <div className="logo-icon">
                             <FontAwesomeIcon icon={faBriefcase} />
                         </div>
-                        <h1 className="logo">InternSync</h1>
+                        <h1 className="logo">Internship Management System</h1>
                     </div>
                 </div>
                 <div className="header-right">

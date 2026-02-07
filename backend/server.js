@@ -10,7 +10,10 @@ const app = express();
 let port = 4500;
 app.use(express.json());
 app.use(cors({
-    origin: ["https://internship-management-system-first.vercel.app"],
+    origin: [
+        "https://internship-management-system-first.vercel.app",
+        "http://localhost:5173"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
