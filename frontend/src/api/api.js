@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // Base URL of your backend
-const API_BASE_URL = "https://internship-management-system-e8s1.onrender.com//api"; // change if deployed
+const API_BASE_URL = "https://internship-management-system-e8s1.onrender.com/api"; // change if deployed
 
 // Create an axios instance
 const api = axios.create({
